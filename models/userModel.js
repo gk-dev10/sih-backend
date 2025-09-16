@@ -43,9 +43,25 @@ const userSchema = new mongoose.Schema(
       type: Number,
       default: 0,
     },
+    isVolunteer : {
+      type : Boolean,
+      default : false
+    },
+    isRequested : {
+      type : Boolean,
+      default : false
+    },
   },
   { timestamps: true }
 );
 
 const User = mongoose.model("User", userSchema);
 export default User;
+
+
+//ai integration
+//user - request api
+
+//admin - approve api, get all requests api
+//export csv, under reports
+ 

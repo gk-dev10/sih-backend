@@ -2,7 +2,7 @@ import admin from "../firebase/firebaseConfig.js";
 import Admin from "../models/adminModel.js";
 
 const auth = admin.auth();
-
+   
 class AdminAuthController {
   login = async (req, res) => {
     const { idToken } = req.body;

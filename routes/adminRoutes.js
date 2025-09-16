@@ -7,7 +7,7 @@ import adminAuthController from "../controllers/adminAuthController.js";
 const router = express.Router();
 
 router.post("/login", adminAuthController.login);
-router.post("/logout", adminAuth.verifyCookie, adminAuthController.login);
+router.post("/logout", adminAuth.verifyCookie, adminAuthController.logout);
 
 router.get(
   "/city-issues",

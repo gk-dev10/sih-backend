@@ -1,4 +1,7 @@
 import admin from "firebase-admin";
+import dotenv from "dotenv";
+
+dotenv.config();
 
 const base64 = process.env.BASE64_SERVICE_ACCOUNT_KEY ;
 

@@ -1,6 +1,7 @@
 import Issue from "../models/issueModel.js";
 import Admin from "../models/adminModel.js";
 import User from "../models/userModel.js";
+
 class AdminController {
   getCityIssues = async (req, res) => {
     try {
